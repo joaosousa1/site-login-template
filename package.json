@@ -1,0 +1,32 @@
+{
+  "name": "site-template",
+  "version": "1.0.0",
+  "description": "template site using expressjs jsonwebtoken and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js"
+  },
+  "author": "João Sousa https://github.com/joaosousa1",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^7.4.3",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.7"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.0",
+    "chokidar": "^2.0.2",
+    "clean-css-cli": "^4.1.10",
+    "html-minifier": "^3.5.9",
+    "shelljs": "^0.8.1",
+    "uglify-js": "^3.3.12"
+  }
+}

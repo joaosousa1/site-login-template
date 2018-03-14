@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 ,user-scalable=no">
+  <title>Register</title>
+
+  <link rel="stylesheet" type="text/css" href="/app/css/main.css">
+</head>
+<body>
+
+  <div class="centro" style="text-align: center">
+
+    <form data-aos="zoom-in" action="/regist" method="post">
+      <h1>Register new user</h1>
+      <input type="text" id="inputEmail" name="newUser" placeholder="username" required autofocus><br>
+      <input type="password" id="inputPassword" name="newUserPass" placeholder="Password" required><br>
+      <input type="password" id="inputPasswordCheck" name="newUserPassCheck" placeholder="Confirm Password" required><br>
+      <button id="botao" class="botao" type="submit" disabled>Submit</button>
+    </form>
+
+
+    <div>
+      <div id="erro1" class="alert" style="display: none">
+        <strong>Alert!</strong> <br>The user already exist.
+      </div>
+      <div id="erro2" class="alert" style="display: none">
+        <strong>Alert!</strong> <br>Reentry same password in field "Confirm Password".
+      </div>
+      <div id="erro3" class="alert" style="display: none">
+        <strong>Alert!</strong> <br>Registration system is disabled. Consult the admin.
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<script src="/app/javascript/main.js"></script>
+<script type="text/javascript">
+registPage();
+</script>
+</html>

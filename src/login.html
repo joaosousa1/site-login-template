@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 ,user-scalable=no">
+  <title>Login</title>
+
+  <link rel="stylesheet" type="text/css" href="/app/css/main.css">
+</head>
+<body>
+
+  <div class="centro" style="text-align: center">
+    <h1 id="teste">Login</h1>
+    <form class="" id="formL" action="login" method="post">
+      <input type="text" name="name" placeholder="name" required>
+      <input type="password" name="password" placeholder="password" id="inputPassword" required>
+      <button class="botao" type="submit">login</button>
+      <div class="alert" id="erro" style="display: none">
+        login erro.
+      </div>
+      <div class="spinner" id="spinner" style="display: none">
+      </div>
+      <h4>No account?<br><a href="/registar">Register</a></h4>
+    </form>
+  </div>
+
+</body>
+<script src="/app/javascript/main.js"></script>
+<script type="text/javascript">
+  loginPage()
+</script>
+</html>
