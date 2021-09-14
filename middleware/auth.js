@@ -4,7 +4,9 @@ var jwt           = require('jsonwebtoken'); // used to create, sign, and verify
 var User          = require('./../models/user'); // get our mongoose model
 var config        = require('./../config'); // get our config file
 
-mongoose.connect(config.database); // connect to database
+//mongoose.connect(config.database); // connect to database
+//Fix DeprecationWarning
+mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 
 var login = function (req, res) {
 
