@@ -19,7 +19,7 @@
     "express": "^4.16.2",
     "jsonwebtoken": "^7.4.3",
     "lodash": "^4.17.5",
-    "mongoose": "^5.0.7"
+    "mongoose": "^6.4.6"
   },
   "devDependencies": {
     "browserify": "^16.1.0",
